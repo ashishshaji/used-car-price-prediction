@@ -1,0 +1,83 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>Task Master</title>
+{% endblock %}
+
+
+
+
+
+
+
+
+{% block body %}
+<div class="topnav">
+    <h2 style="color:white;">Used Car Prediction</h2>
+    
+</div>
+<div>
+    <form action="{{ url_for('predict')}}" method="post">
+        
+        <h3 >Year</h3>
+
+
+        <input class="text" name="Year" type="number ">
+
+        <h3 >How Many Kilometers Drived?</h3>
+        <input class="text" name="Km_driven" required="required">
+
+
+
+
+        <h3>What Is the Fuel type?</h3><br>
+        <select name="Fuel_Type" id="fuel" required="required">
+            <option value="Petrol">Petrol</option>
+            <option value="Diesel">Diesel</option>
+            <option value="Electric">Electric</option>
+            <option value="LPG">LPG/CNG</option>
+        </select>
+
+
+
+        <h3>Are you A Dealer or Individual</h3><br>
+        <select name="Seller_Type_Individual" id="resea" required="required">
+            <option value="Dealer">Dealer</option>
+            <option value="Individual">Individual</option>
+        </select>
+
+
+
+        <h3>Transmission type</h3><br>
+        <select name="Transmission_Mannual" id="research" required="required">
+            <option value="Mannual">Manual Car</option>
+            <option value="Automatic">Automatic Car</option>
+        </select>
+
+
+        <h3>How much owners previously had the car(0 or 1 or 3 or above) ?</h3><br>
+        <select name="Owner" id="Owner" required="required">
+            <option value="f">1st owner</option>
+            <option value="second">2nd owner</option>
+            <option value="third">3rd owner</option>
+            <option value="other">other</option>
+        </select>
+
+
+        <br><br><button class="button" type="submit ">Calculate the Selling Price</button>
+        <br>
+        <div>
+            <br><br><h3 id="predict">{{ prediction_text }}</h3>
+        </div>
+
+
+
+
+    </form>
+
+
+
+    
+</div>
+
+{% endblock %}

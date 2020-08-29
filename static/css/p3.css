@@ -1,0 +1,87 @@
+
+body {
+  font-family: 'Nunito', sans-serif;
+  color: #384047;
+ 
+  }
+
+  
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+    text-align: center;
+  }
+  
+form {
+  max-width: 500px;
+  margin: 10px auto;
+  padding: 10px 20px;
+  background: #f4f7f8;
+  border-radius: 8px;
+  }
+
+
+@media screen and (min-width: 480px) {
+
+form {
+  max-width: 480px;
+  }
+
+  }
+  
+  select {
+      background: rgba(153, 226, 143, 0.322);
+      border: none;
+      font-size: 16px;
+      height: auto;
+       margin: 0;
+      outline: 0;
+      padding: 15px;
+      width: 90%;
+      background-color: white;
+      box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+  margin-bottom: 30px;
+      }  
+
+
+.text{
+      background: rgba(153, 226, 143, 0.322);
+      border: none;
+      font-size: 16px;
+      height: auto;
+       margin: 0;
+      outline: 0;
+      padding: 15px;
+       width: 85%;
+      background-color: white;
+      box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+      margin-bottom: 30px;
+}
+
+header{
+  text-align: center;
+  background-color:rgba(153, 226, 143, 0.322);
+  height: 50px;
+  padding: top 1;;
+  font-family: 'Nunito', sans-serif;
+
+}  
+
+
+.button {
+  background-color: #303945; /* Green */
+  border: none;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 40%;
+  
+
+}
+
+
